@@ -6,6 +6,8 @@ import 'screens/auth/views/welcome_screen.dart';
 import 'screens/home/blocs/get_pizza_bloc/get_pizza_bloc.dart';
 import 'screens/home/views/home_screen.dart';
 
+class FirebasePizzaRepo {}
+
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
 

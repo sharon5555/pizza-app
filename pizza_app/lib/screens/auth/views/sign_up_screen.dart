@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pizza_app/screens/auth/blocs/sign_up_bloc/sign_up_bloc.dart';
 import 'package:user_repository/user_repository.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -162,21 +163,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         style: TextStyle(
                             color: containsUpperCase
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                       Text(
                         "⚈  1 lowercase",
                         style: TextStyle(
                             color: containsLowerCase
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                       Text(
                         "⚈  1 number",
                         style: TextStyle(
                             color: containsNumber
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                     ],
                   ),
@@ -188,14 +189,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         style: TextStyle(
                             color: containsSpecialChar
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                       Text(
                         "⚈  8 minimum character",
                         style: TextStyle(
                             color: contains8Length
                                 ? Colors.green
-                                : Theme.of(context).colorScheme.onBackground),
+                                : Theme.of(context).colorScheme.onSurface),
                       ),
                     ],
                   ),

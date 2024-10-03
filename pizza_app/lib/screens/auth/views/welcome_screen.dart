@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pizza_app/screens/auth/blocs/sign_up_bloc/sign_up_bloc.dart';
 import '../../../blocs/authentication_bloc/authentication_bloc.dart';
 import '../blocs/sign_in_bloc/sign_in_bloc.dart';
 import 'sign_in_screen.dart';
@@ -26,7 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SingleChildScrollView(
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
